@@ -1,0 +1,23 @@
+development:
+  clients:
+    default:
+      database: app_name_03_development
+      hosts:
+        - localhost:27017
+
+staging:
+  clients:
+    default:
+      database: app_name_03_staging
+      hosts:
+        - localhost:27017
+test:
+  clients:
+    default:
+      database: app_name_03_test
+      hosts:
+        - localhost:27017
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
